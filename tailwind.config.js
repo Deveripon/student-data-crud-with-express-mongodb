@@ -1,0 +1,14 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    mode: "jit",
+    content: ["./src/**/*.{html,js}", "./views/*.ejs"],
+    theme: {
+        extend: {},
+    },
+    plugins: [
+        {
+            tailwindcss: {},
+            autoprefixer: {},
+        },
+    ],
+};

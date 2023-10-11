@@ -1,0 +1,98 @@
+<div class="main flex">
+    <div class="create-student-section bg-gray-500 w-6/12">
+        <div class="add-new-student w-full h-screen flex justify-center items-center">
+            <div class="left-side w-5/6 ml-28">
+                <div class="image-container">
+                    <img style="width: 70%" src="/assets/images/stu.png" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="right-side w-6/12 ml-48 mt-20">
+        <h4 class="text-4xl font-semibold">EDIT <span class="text-orange-700">STUDENT</span> DATA</h4>
+        <form action="#" class="add-form">
+            <div class="mt-2 flex flex-col w-80">
+                <label for="name">Students Name</label>
+                <input
+                    class="py-3 px-5 text-sm rounded outline-none border border-gray-400 focus:ring-2 ring-offset-2 ring-purple-400"
+                    type="text"
+                    name="name"
+                    id="name" />
+            </div>
+            <div class="mt-2 flex flex-col w-80">
+                <label for="email">Email</label>
+                <input
+                    class="py-3 px-5 text-sm rounded outline-none border border-gray-400 focus:ring-2 ring-offset-2 ring-purple-400"
+                    type="text"
+                    name="email"
+                    id="email" />
+            </div>
+            <div class="mt-2 flex flex-col w-80">
+                <label for="cell">Cell</label>
+                <input
+                    class="py-3 px-5 text-sm rounded outline-none border border-gray-400 focus:ring-2 ring-offset-2 ring-purple-400"
+                    type="text"
+                    name="cell"
+                    id="cell" />
+            </div>
+            <div class="mt-2 flex flex-col w-80">
+                <label for="course">Course</label>
+                <select
+                    class="py-3 px-5 text-sm rounded outline-none border border-gray-400 focus:ring-2 ring-offset-2 ring-purple-400"
+                    name="course"
+                    id="course">
+                    <option class="py-3" value="">Select Course</option>
+                    <option class="py-3" value="MERN Stack Development">
+                        MERN Stack Development
+                    </option>
+                    <option class="py-3" value="Android app development">
+                        Android app development
+                    </option>
+                    <option class="py-3" value="IOS development">IOS development</option>
+                    <option class="py-3" value="Laravel Development">Laravel Development</option>
+                </select>
+            </div>
+            <div class="mt-2 flex flex-col w-80">
+                <label for="cell">Gender</label>
+                <div class="from-group">
+                    <label for="male">
+                        <input
+                            class="my-3 mx-2"
+                            type="radio"
+                            name="gender"
+                            id="male"
+                            value="male" />Male</label
+                    >
+                    <label for="female">
+                        <input
+                            class="my-3 mx-2"
+                            type="radio"
+                            name="gender"
+                            id="female"
+                            value="female" />Female</label
+                    >
+                </div>
+            </div>
+            <div class="mt-2 flex flex-col w-80">
+                <label for="">Upload Photo</label>
+                <div class="from-group flex gap-3">
+                    <label for="photo">
+                        <i class="ri-image-add-fill text-7xl"></i>
+                        <input hidden type="file" name="photo" id="photo" />
+                    </label>
+                    <div class="photo-preview">
+                        <img
+                            class="h-44 w-44 object-cover rounded"
+                            src="/assets/studentPhoto/user.png"
+                            alt="" />
+                    </div>
+                </div>
+            </div>
+            <button
+                class="bg-orange-500 hover:bg-orange-700 transform duration-300 text-white font-medium py-3 px-12 rounded mt-20"
+                type="submit">
+                Update Now
+            </button>
+        </form>
+    </div>
+</div>
